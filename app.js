@@ -129,7 +129,7 @@ Add a New Project
 promptUser()
   .then(promptProject)
   .then(portfolioData => {
-    return generatePage(mockData);
+    return generatePage(portfolioData);
   })
   .then(pageHTML => {
     return writeFile(pageHTML);
